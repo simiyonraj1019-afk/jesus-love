@@ -1,1 +1,372 @@
 
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jesus Love | இயேசுவின் அன்பு</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(160deg, #10152d, #263967);
+    color: #fffaf0;
+    line-height: 1.7;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background: #10152d;
+}
+
+.cross {
+    font-size: 45px;
+    color: #f3cf79;
+}
+
+h1 {
+    color: #f3cf79;
+    font-size: 42px;
+    margin: 0;
+}
+
+.tagline {
+    color: #fffaf0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px;
+    background: #0b1024;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #f3cf79;
+    border-radius: 20px;
+    padding: 6px 12px;
+}
+
+main {
+    max-width: 850px;
+    margin: auto;
+    padding: 15px;
+}
+
+.card {
+    background: #ffffff10;
+    border: 1px solid #f3cf7960;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 18px 0;
+}
+
+h2 {
+    color: #f3cf79;
+}
+
+.verse {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.reference {
+    color: #f3cf79;
+}
+
+button {
+    background: #f3cf79;
+    color: #10152d;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.secondary {
+    background: #34436d;
+    color: white;
+    border: 1px solid #7280a6;
+}
+
+.prayer {
+    background: #111a37;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 12px 0;
+}
+
+.music-notes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.music-notes button {
+    min-width: 45px;
+}
+
+.small {
+    font-size: 13px;
+    color: #d6d8e7;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #f3cf79;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="cross">✝</div>
+    <h1>Jesus Love</h1>
+    <p class="tagline">இயேசுவின் அன்பு • நம்பிக்கை • சமாதானம்</p>
+</header>
+
+<nav>
+    <a href="#verse">வேதாகம வசனங்கள்</a>
+    <a href="#prayer">ஜெபங்கள்</a>
+    <a href="#music">Keyboard இசை</a>
+    <a href="#worship">ஆராதனை</a>
+    <a href="#share">WhatsApp</a>
+</nav>
+
+<main>
+
+<section class="card" id="verse">
+    <h2>📖 இன்றைய வேதாகம வசனம்</h2>
+
+    <p class="verse" id="verseText">
+        “தேவன் அன்பாகவே இருக்கிறார்.”
+    </p>
+
+    <p class="reference" id="verseRef">1 யோவான் 4:8</p>
+
+    <button onclick="nextVerse()">அடுத்த வசனம்</button>
+    <button class="secondary" onclick="shareVerse()">வசனத்தைப் பகிர்</button>
+</section>
+
+<section class="card" id="prayer">
+    <h2>🙏 தினசரி ஜெபங்கள்</h2>
+
+    <div class="prayer">
+        <h3>🌅 காலை ஜெபம்</h3>
+        அன்புள்ள இயேசுவே, இந்தப் புதிய நாளுக்காக நன்றி.
+        இன்று என் எண்ணங்களிலும் செயல்களிலும் என்னை வழிநடத்தும்.
+        என் குடும்பத்தையும் நண்பர்களையும் காத்து,
+        பிறரிடம் அன்பாக நடக்க உதவும். ஆமென்.
+    </div>
+
+    <div class="prayer">
+        <h3>🌙 இரவு ஜெபம்</h3>
+        ஆண்டவரே, இன்றைய நாளில் நீர் தந்த உதவிகளுக்காக நன்றி.
+        என் தவறுகளை மன்னித்து, என் குடும்பத்திற்குச் சமாதானம் தாரும்.
+        இந்த இரவில் எங்களைப் பாதுகாத்தருளும். ஆமென்.
+    </div>
+
+    <div class="prayer">
+        <h3>📚 மாணவர்களுக்கான ஜெபம்</h3>
+        இயேசுவே, படிப்பில் கவனம் செலுத்தவும்,
+        நல்லதைப் புரிந்துகொள்ளவும் எனக்கு ஞானம் தாரும்.
+        என் ஆசிரியர்களையும் நண்பர்களையும் ஆசீர்வதியும். ஆமென்.
+    </div>
+</section>
+
+<section class="card" id="music">
+    <h2>🎹 Keyboard இசை</h2>
+
+    <p>கீழே உள்ள விசைகளை அழுத்தி இசை ஒலியைக் கேளுங்கள்.</p>
+
+    <div class="music-notes">
+        <button onclick="playNote(261.63)">சா</button>
+        <button onclick="playNote(293.66)">ரி</button>
+        <button onclick="playNote(329.63)">க</button>
+        <button onclick="playNote(349.23)">ம</button>
+        <button onclick="playNote(392)">ப</button>
+        <button onclick="playNote(440)">த</button>
+        <button onclick="playNote(493.88)">நி</button>
+        <button onclick="playNote(523.25)">சா+</button>
+    </div>
+
+    <p class="small">இவை இணைய உலாவி உருவாக்கும் இசை ஒலிகள்.</p>
+</section>
+
+<section class="card" id="worship">
+    <h2>🎵 ஆராதனைப் பாடல்</h2>
+
+    <p class="verse">
+        இயேசுவே என் ஒளியே,<br>
+        என் பாதையில் துணையே,<br>
+        உம் அன்பில் நான் வாழ்வேன்,<br>
+        உம் நாமத்தைப் பாடுவேன்.
+    </p>
+
+    <button class="secondary" onclick="copyWorship()">
+        பாடல் வரிகளை நகலெடு
+    </button>
+</section>
+
+<section class="card" id="share">
+    <h2>📱 WhatsApp Status</h2>
+
+    <p>வேதாகம வசனங்களை WhatsApp-ல் பகிருங்கள்.</p>
+
+    <button onclick="shareVerse()">WhatsApp-ல் பகிர்</button>
+
+    <button class="secondary" onclick="copyVerse()">
+        வசனத்தை நகலெடு
+    </button>
+</section>
+
+</main>
+
+<footer>
+    <h3>✝ Jesus Love ✝</h3>
+    <p>அன்பு • நம்பிக்கை • சமாதானம்</p>
+    <p class="small">இயேசுவின் அன்பு உங்கள் குடும்பத்தில் நிறைந்திருக்கட்டும்.</p>
+</footer>
+
+<script>
+const verses = [
+    {
+        text: "“தேவன் அன்பாகவே இருக்கிறார்.”",
+        ref: "1 யோவான் 4:8"
+    },
+    {
+        text: "“கர்த்தர் என் மேய்ப்பராயிருக்கிறார்; நான் தாழ்ச்சியடையேன்.”",
+        ref: "சங்கீதம் 23:1"
+    },
+    {
+        text: "“என் சமாதானத்தை உங்களுக்குக் கொடுக்கிறேன்.”",
+        ref: "யோவான் 14:27"
+    },
+    {
+        text: "“எல்லாவற்றையும் அன்போடே செய்யுங்கள்.”",
+        ref: "1 கொரிந்தியர் 16:14"
+    },
+    {
+        text: "“கர்த்தரிடத்தில் உன் வழியை ஒப்புவித்து, அவர்மேல் நம்பிக்கையாயிரு.”",
+        ref: "சங்கீதம் 37:5"
+    }
+];
+
+let current = 0;
+
+function nextVerse() {
+    current = (current + 1) % verses.length;
+
+    document.getElementById("verseText").textContent =
+        verses[current].text;
+
+    document.getElementById("verseRef").textContent =
+        verses[current].ref;
+}
+
+function verseMessage() {
+    return document.getElementById("verseText").textContent +
+        " — " +
+        document.getElementById("verseRef").textContent +
+        "\n✝ Jesus Love";
+}
+
+async function shareVerse() {
+    const text = verseMessage();
+
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: "Jesus Love",
+                text: text
+            });
+        } catch (error) {
+            // பகிர்வை பயனர் ரத்து செய்தால் எதுவும் செய்ய வேண்டாம்.
+        }
+    } else {
+        copyText(text);
+    }
+}
+
+function copyVerse() {
+    copyText(verseMessage());
+}
+
+function copyWorship() {
+    copyText(
+        "இயேசுவே என் ஒளியே,\n" +
+        "என் பாதையில் துணையே,\n" +
+        "உம் அன்பில் நான் வாழ்வேன்,\n" +
+        "உம் நாமத்தைப் பாடுவேன்."
+    );
+}
+
+async function copyText(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        alert("நகலெடுக்கப்பட்டது! இப்போது WhatsApp-ல் ஒட்டலாம்.");
+    } catch (error) {
+        prompt("இந்த உரையைத் தேர்வு செய்து நகலெடுக்கவும்:", text);
+    }
+}
+
+let audio;
+
+function playNote(freq) {
+    try {
+        audio = audio || new (
+            window.AudioContext || window.webkitAudioContext
+        )();
+
+        if (audio.state === "suspended") {
+            audio.resume();
+        }
+
+        const oscillator = audio.createOscillator();
+        const gain = audio.createGain();
+
+        oscillator.type = "sine";
+        oscillator.frequency.value = freq;
+
+        gain.gain.setValueAtTime(0.0001, audio.currentTime);
+
+        gain.gain.exponentialRampToValueAtTime(
+            0.18,
+            audio.currentTime + 0.03
+        );
+
+        gain.gain.exponentialRampToValueAtTime(
+            0.0001,
+            audio.currentTime + 0.65
+        );
+
+        oscillator.connect(gain);
+        gain.connect(audio.destination);
+
+        oscillator.start();
+        oscillator.stop(audio.currentTime + 0.7);
+
+    } catch (error) {
+        alert("இசை ஒலி கிடைக்கவில்லை. மீண்டும் முயற்சி செய்யுங்கள்.");
+    }
+}
+</script>
+
+</body>
+</html>
